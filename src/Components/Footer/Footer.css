@@ -1,0 +1,55 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+    margin: 20px 200px 0 200px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    color: #495E57;
+    margin: 50px 0 10px 0;
+}
+
+#logo-foot {
+    height: 280px;
+    width: auto;
+}
+
+#navigation li {
+    list-style: none;
+    text-decoration: none;
+    color: #495E57;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 5px;
+}
+
+#contact li {
+    list-style: none;
+    text-decoration: none;
+    color: #495E57;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 5px;
+}
+
+#contact i {
+    color: #495E57;
+}
+
+#social i {
+    display: flex;
+    flex-direction: column;
+    color: #495E57;
+    font-size: 40px;
+    padding: 0 0 0 40px;
+    margin-bottom: 5px;
+    
+}
+@media screen and (max-width: 769px) {
+    .footer {
+        margin: 20px;
+    }
+
+}

@@ -1,0 +1,89 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 250px;
+}
+
+.logo {
+    height: 60px;
+    width: 225px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding:  0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #495E57;
+    transition: 0.3s ease-in-out;
+    font-family: 'Markazi Text', serif;
+}
+
+#navbar li a:hover {
+    color: #F4CE14;
+    font-size: 20px;
+}
+
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #F4CE14;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: #495E57;
+}
+
+@media screen and (max-width: 769px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 83px;
+        right: -1000px;
+        width: 250px;
+        height: 600px;
+        padding: 40px 0 0 10px;
+        background-color: #ffffff;
+        transition: 0.45s ease-in-out;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #mobile {
+        display: block;
+    }
+    #mobile i{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    nav {
+        padding: 5px 50px;
+    }
+
+}
